@@ -16,7 +16,7 @@ const navigation = [
   },
   {
     name: "Contact",
-    path: "/",
+    path: "/contact",
   },
 ];
 const Header = () => {

@@ -6,13 +6,15 @@ const StatCard = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-            Master Cleanse Reliac Heirloom
+            Welcome to Gharra.np
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven't heard of them man bun deep jianbing selfies heirloom prism
-            food truck ugh squid celiac humblebrag.
+            Discover a world of endless shopping possibilities at Gharra.np!
+            Whether you're hunting for the latest electronics, trendy men's and
+            women's clothing, dazzling jewelry, or everyday essentials, we've
+            got you covered. Explore our extensive collection and enjoy a
+            seamless shopping experience with products that cater to your every
+            need.
           </p>
         </div>
         <div className="flex flex-wrap -m-4 text-center">

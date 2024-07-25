@@ -10,7 +10,7 @@ const ProductCard = ({ products = [] }) => {
             return (
               <Link
                 to={`/products/${product.id}`}
-                className="lg:w-1/4 md:w-1/2 p-4 w-full border border-opacity-40 mb-3 cursor-pointer"
+                className="lg:w-1/4 md:w-1/2 p-4 w-[80%] md:mx-0 mx-8 border border-opacity-40 mb-3 cursor-pointer"
               >
                 <a className="block relative h-48 rounded overflow-hidden">
                   <img

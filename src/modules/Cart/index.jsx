@@ -57,8 +57,8 @@ const Cart = () => {
 
   return (
     <div className="container mx-auto mt-10">
-      <div className="flex shadow-md my-10">
-        <div className="w-3/4 bg-white px-10 py-10">
+      <div className="flex flex-col shadow-md my-10 md:flex-row ">
+        <div className="md:w-3/4 w-full bg-white px-10 py-10">
           <div className="flex justify-between border-b pb-8">
             <h1 className="font-semibold text-2xl">Shopping Cart</h1>
             <h2 className="font-semibold text-2xl">{carts?.length} Items</h2>
@@ -81,8 +81,12 @@ const Cart = () => {
             return (
               <div className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
                 <div className="flex w-2/5">
-                  <div className="w-20">
-                    <img className="h-24" src={cart?.image} alt={cart?.title} />
+                  <div className="w-36 md:w-20">
+                    <img
+                      className=" h-16 md:h-24"
+                      src={cart?.image}
+                      alt={cart?.title}
+                    />
                   </div>
                   <div className="flex flex-col justify-between ml-4 flex-grow">
                     <span className="font-bold text-sm">{cart?.title}</span>
@@ -144,7 +148,7 @@ const Cart = () => {
           </Link>
         </div>
 
-        <div id="summary" className="w-1/4 px-8 py-10">
+        <div id="summary" className=" w-full md:w-1/4 px-8 py-10">
           <h1 className="font-semibold text-2xl border-b pb-8">
             Order Summary
           </h1>

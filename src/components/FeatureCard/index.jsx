@@ -13,7 +13,7 @@ const FeatureCard = ({ cards = [] }) => {
             Find your category
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap flex-col md:flex-row -m-4">
           {cards.map((card) => {
             return (
               <Link

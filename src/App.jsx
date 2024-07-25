@@ -7,6 +7,7 @@ import Product from "./modules/Product";
 import Products from "./modules/Products";
 import CategoryProducts from "./modules/CategoryProducts";
 import Cart from "./modules/Cart";
+import Contact from "./modules/Contact";
 const Layout = () => {
   return (
     <div className="app">
@@ -41,6 +42,10 @@ function App() {
         {
           path: "/cart",
           element: <Cart />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
         },
       ],
     },
