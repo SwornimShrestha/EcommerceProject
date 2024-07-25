@@ -7,9 +7,7 @@ const Category = () => {
   useEffect(() => {
     const fetchCategory = async () => {
       try {
-        const response = await fetch(
-          "https://fakestoreapi.com/products/categories"
-        );
+        const response = await fetch(`${import.meta.env.VITE_CATEGORY}`);
         const data = await response.json();
         console.log(data);
         setCategory(data);

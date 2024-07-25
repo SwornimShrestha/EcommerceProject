@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Hero from "../../components/Hero";
 import Products from "../../components/ProductCard";
-import Footer from "../../components/Footer";
-import FeatureCard from "../../components/FeatureCard";
 import StatCard from "../../components/StatCard";
 import Category from "../../components/Category";
 
@@ -12,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("https://fakestoreapi.com/products");
+        const response = await fetch(`${import.meta.env.VITE_PRODUCTS}`);
         const data = await response.json();
         console.log(data);
         setProducts(data);

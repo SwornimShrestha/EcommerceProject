@@ -9,7 +9,7 @@ const Product = () => {
   const [product, setproduct] = useState({});
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+      const response = await fetch(`${import.meta.env.VITE_PRODUCTS}/${id}`);
       const data = await response.json();
       console.log(data);
       setproduct(data);

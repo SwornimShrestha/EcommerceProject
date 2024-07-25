@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import FeatureCard from "../../components/FeatureCard";
 import ProductCard from "../../components/ProductCard";
 import Category from "../../components/Category";
 
@@ -9,7 +8,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("https://fakestoreapi.com/products");
+        const response = await fetch(`${import.meta.env.VITE_PRODUCTS}`);
         const data = await response.json();
         console.log(data);
         setProducts(data);
