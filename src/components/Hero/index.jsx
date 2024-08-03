@@ -11,7 +11,6 @@ const Hero = () => {
               Welcome to Gharra Nepal.
             </h1>
             <p className="mb-8 leading-relaxed">
-              Certainly! Here's a one-paragraph description for Gharra.np: ---
               Welcome to Gharra.np, your ultimate online shopping destination
               where convenience meets variety. Whether you're looking for the
               latest electronics, stylish men's and women's clothing, exquisite
