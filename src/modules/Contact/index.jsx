@@ -13,8 +13,8 @@ const Contact = () => {
             title="map"
             marginheight="0"
             marginwidth="0"
-            scrolling="no"
-            src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d113002.40835916412!2d85.32459519999999!3d27.738112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1724209498624!5m2!1sen!2snp"
+
             // style="filter: grayscale(1) contrast(1.2) opacity(0.4);"
           ></iframe>
           <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
@@ -22,10 +22,7 @@ const Contact = () => {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">
-                Photo booth tattooed prism, portland taiyaki hoodie neutra
-                typewriter
-              </p>
+              <p className="mt-1">Kathmandu,Nepal</p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
@@ -37,7 +34,7 @@ const Contact = () => {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <p className="leading-relaxed">123-456-7890</p>
+              <p className="leading-relaxed">+977 xxxxxxxxxx</p>
             </div>
           </div>
         </div>
@@ -45,9 +42,7 @@ const Contact = () => {
           <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
             Feedback
           </h2>
-          <p className="leading-relaxed mb-5 text-gray-600">
-            Post-ironic portland shabby chic echo park, banjo fashion axe
-          </p>
+
           <div className="relative mb-4">
             <label for="name" className="leading-7 text-sm text-gray-600">
               Name
@@ -84,8 +79,7 @@ const Contact = () => {
             Button
           </button>
           <p className="text-xs text-gray-500 mt-3">
-            Chicharrones blog helvetica normcore iceland tousled brook viral
-            artisan.
+            you can contact us from here
           </p>
         </div>
       </div>

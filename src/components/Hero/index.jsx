@@ -28,7 +28,7 @@ const Hero = () => {
             <img
               className="object-cover object-center rounded  md:max-h-[500px] md:max-w-[500px] max-[200px]  "
               alt="hero"
-              src="https://images.pexels.com/photos/6634182/pexels-photo-6634182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="./hero.png"
             />
           </div>
         </div>
