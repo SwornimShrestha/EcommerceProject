@@ -21,29 +21,22 @@ const navigation = [
 ];
 const Header = () => {
   return (
-    <header className="text-gray-600 body-font shadow-lg ">
+    <header className="text-gray-600 body-font shadow-2xl ">
       <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
           <Link to={"/"}>
-            <span className="ml-3 text-xl">Gharra</span>
+            <h1 className="ml-3 text-xl italic font-semibold">
+              Gharra <span>.np</span>
+            </h1>
           </Link>
         </a>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center ">
           {navigation.map((navigation) => {
             return (
-              <Link to={navigation.path} className="mr-5 hover:text-gray-900">
+              <Link
+                to={navigation.path}
+                className="mr-5 hover:underline underline-offset-4 decoration-sky-500"
+              >
                 {navigation.name}
               </Link>
             );

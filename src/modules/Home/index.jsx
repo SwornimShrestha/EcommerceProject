@@ -24,19 +24,20 @@ const Home = () => {
     <div>
       <Hero />
       <Category />
-      <div className="flex flex-col text-center w-full mt-20">
+      <div className="flex flex-col text-center w-full mt-20 bg-[#f9f9f9]">
         <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
           Products
         </h2>
         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
           Most Popular Products
         </h1>
+        {products.length > 0 ? (
+          <Products products={products} />
+        ) : (
+          <p>Loading....</p>
+        )}
       </div>
-      {products.length > 0 ? (
-        <Products products={products} />
-      ) : (
-        <p>Loading....</p>
-      )}
+
       <StatCard />
     </div>
   );
