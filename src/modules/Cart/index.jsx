@@ -190,7 +190,14 @@ const Cart = () => {
               <span>Total cost</span>
               <span>NRs{(total + 10).toFixed(2)}</span>
             </div>
-            <button className="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">
+            <button
+              onClick={() => {
+                localStorage.removeItem("cart"); // Clear cart data
+                alert("Checkout Success");
+                navigate("/");
+              }}
+              className="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full"
+            >
               Checkout
             </button>
           </div>
