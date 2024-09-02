@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Hero from "../../components/Hero";
-import Products from "../../components/ProductCard";
-import StatCard from "../../components/StatCard";
-import Category from "../../components/Category";
+import Hero from "../../components/Hero/Hero";
+import Products from "../../components/ProductCard/ProductCard";
+import StatCard from "../../components/StatCard/StatCard";
+import Category from "../../components/Category/Category";
 
 const Home = () => {
   const [products, setProducts] = useState([]);

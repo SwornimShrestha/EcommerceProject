@@ -1,19 +1,19 @@
-import Header from "./components/Header";
-import Home from "./modules/Home";
+import Header from "./components/Header/Header";
+import Home from "./modules/Home/Home";
 import "./App.css";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import Footer from "./components/Footer";
-import Product from "./modules/Product";
-import Products from "./modules/Products";
-import CategoryProducts from "./modules/CategoryProducts";
-import Cart from "./modules/Cart";
-import Contact from "./modules/Contact";
+import Product from "./modules/Product/Product";
+import Products from "./modules/Products/Products";
+import CategoryProducts from "./modules/CategoryProducts/CategoryProducts";
+import Cart from "./modules/Cart/Cart";
+import Contact from "./modules/Contact/Contact";
+import Admin from "./modules/Admin/Admin";
 const Layout = () => {
   return (
     <div className="app">
       <Header />
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
@@ -46,6 +46,11 @@ function App() {
         {
           path: "/contact",
           element: <Contact />,
+        },
+
+        {
+          path: "/admin",
+          element: <Admin />,
         },
       ],
     },

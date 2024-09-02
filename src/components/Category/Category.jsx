@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import FeatureCard from "../FeatureCard";
+import FeatureCard from "../FeatureCard/FeatureCard";
 
 const Category = () => {
   const [category, setCategory] = useState([]);

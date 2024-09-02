@@ -31,9 +31,10 @@ const Header = () => {
           </Link>
         </a>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center ">
-          {navigation.map((navigation) => {
+          {navigation.map((navigation, index) => {
             return (
               <Link
+                key={index}
                 to={navigation.path}
                 className="mr-5 hover:underline underline-offset-4 decoration-sky-500"
               >
@@ -45,7 +46,7 @@ const Header = () => {
         <Link to={"/cart"}>
           <button className="inline-flex items-center   text-white bg-indigo-500 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
             Go to Cart
-            <svg
+            {/* <svg
               fill="none"
               stroke="currentColor"
               stroke-linecap="round"
@@ -55,7 +56,7 @@ const Header = () => {
               viewBox="0 0 24 24"
             >
               <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
+            </svg> */}
           </button>
         </Link>
       </div>
